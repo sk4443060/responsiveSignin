@@ -1,0 +1,163 @@
+/* ========================= INDEX ========================== */
+/* 00. Body Section                                           */
+/* 01. Login Section                                          */
+/* 02. Forgot Section                                         */
+/* 03. Responsive Section                                     */
+/* ========================================================== */
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0F1932;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: normal;
+}
+
+/* ====================== LOGIN SECTION ======================= */
+
+.loginFormWrapper{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.loginFormWrapper .logo{
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 2rem;
+}
+
+.logo a img{
+    width: 180px;
+    height: auto;
+}
+
+.formContainer{
+    width: 350px;
+}
+
+.formContainer div{
+    background-color: #fff; 
+    border-radius: 5px; 
+    padding: 10px 40px;
+}
+
+#signinHeader{
+    color: #000; 
+    font-weight: lighter; 
+    font-size: 25px; 
+    text-align: center;
+}
+
+#signinPara{
+    margin-top: -8px;
+    font-size: 12px; 
+    color: #97afd5; 
+    text-align: center;
+}
+
+#signinForm{
+    margin-bottom: 1.5rem;
+}
+
+#signinUsername{
+    border-radius: 6px; 
+    border: 1px solid #dbe4f7; 
+    width: 90%; 
+    padding: 10px 15px; 
+    font-size: .9em; 
+    color: #305082; 
+    transition: all .4s; 
+    background-color: transparent;
+}
+
+#signinPassword{
+    margin: 1rem 0 1.5rem; 
+    border-radius: 6px; 
+    border: 1px solid #dbe4f7; 
+    width: 90%; 
+    padding: 10px 15px; 
+    font-size: .9em; 
+    color: #305082; 
+    transition: all .4s; 
+    background-color: transparent;
+}
+
+.formContainer div a{
+    display: block; 
+    text-decoration: none; 
+    font-size: 12px; 
+    color: #f42f54;
+}
+
+.formContainer div button{
+    margin-top: 1.5rem; 
+    width: 120px; 
+    height: 35px; 
+    font-size: 12px; 
+    color: #fff; 
+    background-color: #f42f54; 
+    transition: 0.6s;
+    border: none; 
+    border-radius: 5px;
+}
+
+.formContainer div button:hover{
+    cursor: pointer;
+    background-color: #F8AA38;
+}
+
+#signinForm input::placeholder{
+    font-size: 10px;
+}
+
+/* ===================== FORGOT SECTION ====================== */
+.loginFormWrapper p{
+    margin-top: 1.5rem; 
+    font-size: 12px !important; 
+    color: #97afd5;
+    text-align: center;
+}
+
+.loginFormWrapper p a{
+    text-decoration: none; 
+    color: #97afd5;
+    transition: 0.6s;
+}
+
+.loginFormWrapper p a:hover{
+    color: #f42f54;
+    transition: 0.6s;
+}
+
+
+/* ======================= RESPONSIVE SECTION ======================== *\
+    RESPONSIVE SECTION ===============================================   |
+    A. Styles for screens up to 600px wide                               |
+    B. Styles for screens between 601px and 900px wide                   |
+    C. Styles for screens between 901px and 1200px wide                  |
+    D. Styles for screens larger than 1200px wide                        |
+\* =================================================================== */
+@media screen and (max-width: 600px) {
+    .loginFormWrapper {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* @media screen and (min-width: 601px) and (max-width: 900px) {
+
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1201px) {
+
+} */
